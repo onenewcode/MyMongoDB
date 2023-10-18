@@ -3,10 +3,11 @@ spring:
   data:
     mongodb:
       # 主机地址
-      host: 180.76.159.126
+      host: 192.168.218.131
       # 数据库
       database: articledb
       # 默认端口是27017
       port: 27017
-      #也可以使用uri连接
-      uri: mongodb://bobo:123456@180.76.159.126:27017,180.76.159.126:27018,180.76.159.126:27019/articledb?connect=replicaSet&slaveOk=true&replicaSet=myrs
+      username: root
+      password: "123456"
+      authentication-database: admin #必须设置设置权限认证的数据库
